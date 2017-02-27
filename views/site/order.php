@@ -22,6 +22,24 @@ $script = <<< JS
             locale: 'ru',
             format: 'LT'
         });
+
+        // Create the preview image
+        $(".field-orderform-imagefile input:file").change(function (){     
+            var img = $('<img/>', {
+                id: 'dynamic',
+                width:250,
+                height:200
+            });      
+            var file = this.files[0];
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $("label[for='orderform-imagefile']").text("Изображение загружено");
+                //$(".image-preview-clear").show();
+                img.attr('src', e.target.result);
+                $("#thumb").html($(img)[0].outerHTML);
+            }        
+            reader.readAsDataURL(file);
+        });  
     });
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);
@@ -95,6 +113,8 @@ $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-datetimepicker.min.js', ['d
 
         <?= $form->field($model, 'description')->textarea(['rows' => 3, 'cols' => 7]) ?>
         <?= $form->field($model, 'imageFile')->fileInput() ?>
+
+        <div id="thumb"></div>
 
         <div class="form-group">
             <div class="col-lg-offset-1 col-lg-11">

@@ -52,26 +52,29 @@ AppAsset::register($this);
     ]);
 
     $navItems=[
-        ['label' => 'Главная', 'url' => ['/site/index']],
-        ['label' => 'Заказы', 'url' => ['/site/orders']],
-        ['label' => 'Мастера', 'url' => ['/site/masters']],
-        ['label' => 'Заказать запчасть', 'url' => ['/site/zakaz']],
-        ['label' => 'Запчасти', 'url' => ['/site/zakazi']],
-        ['label' => 'FAQ', 'url' => ['/site/faq']],
-        ['label' => 'Поддержка', 'url' => ['/site/support']],
+        ['label' => 'Главная', 'url' => ['/site/index']],               // 0
+        ['label' => 'Заказы', 'url' => ['/site/orders']],               // 1
+        ['label' => 'Мастера', 'url' => ['/site/masters']],             // 2
+        ['label' => 'Заказать запчасть', 'url' => ['/site/zakaz']],     // 3
+        ['label' => 'Заказать ремонт', 'url' => ['/site/order']],       // 4
+        ['label' => 'Запчасти', 'url' => ['/site/zakazi']],             // 5
+        ['label' => 'FAQ', 'url' => ['/site/faq']],                     // 6
+        ['label' => 'Поддержка', 'url' => ['/site/support']],           // 7
     ];
 
     if (Yii::$app->user->isGuest) {
         unset($navItems[1]);
         unset($navItems[3]);
         unset($navItems[4]);
+        unset($navItems[5]);
     } else {
         if (\Yii::$app->user->identity->type == 0) { //user is client
             unset($navItems[1]);
-            unset($navItems[4]);
+            unset($navItems[5]);
         } else { //user is master
             unset($navItems[2]);
             unset($navItems[3]);
+            unset($navItems[4]);
         }
     }
 
@@ -81,7 +84,7 @@ AppAsset::register($this);
     ]);
     ?>
 
-    <ul class="nav navbar-user navbar-right">
+    <ul class="nav navbar-user navbar-right" style="padding-top: 5px;">
         <li class="dropdown">
             <a href="#" class="user-tog-btn dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -97,7 +100,7 @@ AppAsset::register($this);
         </li>
     </ul>
 
-    <ul class="nav navbar-right">
+    <ul class="nav navbar-right user-info">
         <?php
         if (!Yii::$app->user->isGuest) {
             $str = '<li>';
