@@ -47,6 +47,7 @@ $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' 
                 <p class="text-right">Техника: <?= \app\models\Technics::findOne($item['tech'])['name'] ?></p>
                 <!-- <button type="button" class="btn btn-md btn-primary">Принять заявку</button> -->
                 <a href="<?= Yii::getAlias('@web') ?>/site/description?id=<?= $item['id'] ?>" role="button" class="btn btn-primary btn-large">Подробнее</a>
+                <img src="<?= $item['file'] ?>">
             </div>
         </div>
 

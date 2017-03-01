@@ -57,7 +57,7 @@ class OrderForm extends ActiveRecord {
     }
 
     public function saveRecord($post) {
-        date_default_timezone_set('UTC');
+        date_default_timezone_set('Europe/Moscow');
         
         $params = [
             'id' => Guid::create_guid(),

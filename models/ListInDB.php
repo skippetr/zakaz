@@ -40,7 +40,7 @@ class ListInDB
     public static function getListOfOrders($region = 'none', $tech = 'none')
     {
         //$query = (new \yii\db\Query())->select(['id', 'title', 'description', 'address', 'city', 'tech'])->from('orders');
-        $query = (new \yii\db\Query())->select(['id', 'name', 'description', 'address', 'city', 'tech'])->from('opportunities');
+        $query = (new \yii\db\Query())->select(['id', 'name', 'description', 'address', 'city', 'tech', 'file'])->from('opportunities');
         if ($region != 'none' and $tech != 'none')
             $query = $query->where(['city' => $region, 'tech' => $tech, 'deleted' => '0']);
         elseif ($region != 'none')
@@ -56,7 +56,7 @@ class ListInDB
 
     public static function getListOfZakazi($region = 'none', $tech = 'none')
     {
-        $query = (new \yii\db\Query())->select(['id', 'name', 'description', 'city'])->from('zkz_spares');
+        $query = (new \yii\db\Query())->select(['id', 'name', 'description', 'city', 'file'])->from('zkz_spares');
         if ($region != 'none' and $tech != 'none')
             $query = $query->where(['city' => $region, 'tech' => $tech, 'deleted' => '0']);
         elseif ($region != 'none')

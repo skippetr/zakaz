@@ -52797,3 +52797,1475 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1488396949.968
     'REQUEST_TIME' => 1488396949
 ]
+2017-03-01 20:55:30 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/yii-test/uploads/Снимок экрана 2015-01-10 в 12.54.51.png): failed to open stream: No such file or directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/www/html/y...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/ZakazForm.php(52): yii\web\UploadedFile->saveAs('/var/www/html/y...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(152): app\models\ZakazForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionZakaz()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('zakaz', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/zakaz', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 20:55:29 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'ZakazForm' => [
+        'name' => '123'
+        'email' => 'qwe@qwe.ru'
+        'city' => ''
+        'address' => ''
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'items' => [
+            0 => ''
+        ]
+        'description' => ''
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'ZakazForm' => [
+        'name' => [
+            'imageFile' => 'Снимок экрана 2015-01-10 в 12.54.51.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phparmjO3'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcnMcCoZAMAAA5bYOUAAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcnMcCoZAMAAA5bYOUAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56521'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryI7KxpHF3KaaWZiyJ'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/zakaz'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49992'
+    'REDIRECT_URL' => '/yii-test/web/site/zakaz'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/zakaz'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488398129.879
+    'REQUEST_TIME' => 1488398129
+]
+2017-03-01 21:03:56 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/yii-test/uploads/Снимок экрана 2015-01-10 в 12.54.51.png): failed to open stream: No such file or directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/www/html/y...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(51): yii\web\UploadedFile->saveAs('/var/www/html/y...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:03:55 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => 'Снимок экрана 2015-01-10 в 12.54.51.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phpPFVtAR'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcpKsCoZAMAALHBpGIAAAAC'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcpKsCoZAMAALHBpGIAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56514'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarymQbqZBFPKOG30ASa'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50121'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488398634.808
+    'REQUEST_TIME' => 1488398634
+]
+2017-03-01 21:05:38 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/yii-test/uploads/Снимок экрана 2015-01-10 в 12.54.51.png): failed to open stream: No such file or directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/www/html/y...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(52): yii\web\UploadedFile->saveAs('/var/www/html/y...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:05:36 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => 'Снимок экрана 2015-01-10 в 12.54.51.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/php2wMxIj'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcpkMCoZAMAAK6zx4IAAAAA'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcpkMCoZAMAAK6zx4IAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56514'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarymQbqZBFPKOG30ASa'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50156'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488398736.406
+    'REQUEST_TIME' => 1488398736
+]
+2017-03-01 21:05:46 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/yii-test/uploads/Снимок экрана 2015-01-10 в 12.54.51.png): failed to open stream: No such file or directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/www/html/y...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(52): yii\web\UploadedFile->saveAs('/var/www/html/y...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:05:46 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => 'Снимок экрана 2015-01-10 в 12.54.51.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phpZ2BHSE'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcpmsCoZAMAALMslQQAAAAF'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcpmsCoZAMAALMslQQAAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56514'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarymQbqZBFPKOG30ASa'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50160'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488398746.049
+    'REQUEST_TIME' => 1488398746
+]
+2017-03-01 21:08:00 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/yii-test/uploads/Снимок экрана 2015-01-10 в 12.54.51.png): failed to open stream: No such file or directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/www/html/y...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(51): yii\web\UploadedFile->saveAs('/var/www/html/y...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:07:59 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => 'Снимок экрана 2015-01-10 в 12.54.51.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phpobYVVB'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcqH8CoZAMAALHBpGMAAAAC'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcqH8CoZAMAALHBpGMAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56514'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary6ta6zHhWhAOdCkVV'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50204'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488398879.65
+    'REQUEST_TIME' => 1488398879
+]
+2017-03-01 21:08:35 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/yii-test/uploads/132.png): failed to open stream: No such file or directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/www/html/y...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(51): yii\web\UploadedFile->saveAs('/var/www/html/y...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:08:34 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => '132.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phpJTBZM0'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcqQsCoZAMAALMslQUAAAAF'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcqQsCoZAMAALMslQUAAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56469'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycA0FVIWnh4dAgKES'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50217'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488398914.876
+    'REQUEST_TIME' => 1488398914
+]
+2017-03-01 21:10:21 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/yii-test/uploads/132.png): failed to open stream: No such file or directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/www/html/y...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(51): yii\web\UploadedFile->saveAs('/var/www/html/y...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:10:20 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => '132.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/php44teuX'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcqrMCoZAMAALLNMlMAAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcqrMCoZAMAALLNMlMAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56469'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycA0FVIWnh4dAgKES'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50225'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488399020.74
+    'REQUEST_TIME' => 1488399020
+]
+2017-03-01 21:10:23 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/yii-test/uploads/132.png): failed to open stream: No such file or directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/www/html/y...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(51): yii\web\UploadedFile->saveAs('/var/www/html/y...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:10:23 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => '132.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phpkVQY1Q'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcqr8CoZAMAAKyI8FQAAAAB'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcqr8CoZAMAAKyI8FQAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56469'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycA0FVIWnh4dAgKES'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50227'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488399023.557
+    'REQUEST_TIME' => 1488399023
+]
+2017-03-01 21:11:00 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';'' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php:152
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-01 21:10:59 [::1][-][-][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => '132.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phps3JLvc'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcq08CoZAMAAA5bYOgAAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcq08CoZAMAAA5bYOgAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56469'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycA0FVIWnh4dAgKES'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50234'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488399059.485
+    'REQUEST_TIME' => 1488399059
+]
+2017-03-01 21:11:16 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/yii-test/uploads/132.png): failed to open stream: No such file or directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/www/html/y...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(51): yii\web\UploadedFile->saveAs('/var/www/html/y...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:11:15 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => '132.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/php58FGnZ'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcq48CoZAMAAKuTr5wAAAAK'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcq48CoZAMAAKuTr5wAAAAK'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56469'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycA0FVIWnh4dAgKES'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50237'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488399075.484
+    'REQUEST_TIME' => 1488399075
+]
+2017-03-01 21:13:09 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/yii-test/uploads/132.png): failed to open stream: No such file or directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/www/html/y...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(51): yii\web\UploadedFile->saveAs('/var/www/html/y...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:13:08 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => '132.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phpqanAW0'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcrU8CoZAMAAK6zx4QAAAAA'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcrU8CoZAMAAK6zx4QAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56469'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycA0FVIWnh4dAgKES'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50243'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488399187.756
+    'REQUEST_TIME' => 1488399187
+]
+2017-03-01 21:16:06 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(): The second argument to copy() function cannot be a directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(51): yii\web\UploadedFile->saveAs('/')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:16:04 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => '132.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phpFMyrPC'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcsBMCoZAMAALMslQYAAAAF'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcsBMCoZAMAALMslQYAAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56469'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycA0FVIWnh4dAgKES'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50322'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488399364.125
+    'REQUEST_TIME' => 1488399364
+]
+2017-03-01 21:16:19 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/1.png): failed to open stream: Permission denied' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/1.png')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(51): yii\web\UploadedFile->saveAs('/1.png')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:16:19 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => '132.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phpPUTtBo'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcsE8CoZAMAAKyI8FUAAAAB'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcsE8CoZAMAAKyI8FUAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56469'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycA0FVIWnh4dAgKES'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50325'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488399379.5
+    'REQUEST_TIME' => 1488399379
+]
+2017-03-01 21:16:37 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/1.png): failed to open stream: Permission denied' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/1.png')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(51): yii\web\UploadedFile->saveAs('/var/1.png')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:16:36 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => '132.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phpo4na57'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcsJMCoZAMAAA5bYOkAAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcsJMCoZAMAAA5bYOkAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56469'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycA0FVIWnh4dAgKES'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50330'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488399396.001
+    'REQUEST_TIME' => 1488399396
+]
+2017-03-01 21:16:50 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/1.png): failed to open stream: No such file or directory' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php:163
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'move_uploaded_f...', '/Applications/X...', 163, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/UploadedFile.php(163): move_uploaded_file('/Applications/X...', '/var/www/1.png')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/OrderForm.php(51): yii\web\UploadedFile->saveAs('/var/www/1.png')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(99): app\models\OrderForm->upload()
+#4 [internal function]: app\controllers\SiteController->actionOrder()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('order', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/order', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-03-01 21:16:48 [::1][12][i3cce82lfurmf7cvjtc5jmqmm6][info][application] $_POST = [
+    'OrderForm' => [
+        'title' => 'qwe'
+        'city' => ''
+        'address' => 'qwe'
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'date' => ''
+        'time' => ''
+        'description' => 'qwe'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'OrderForm' => [
+        'name' => [
+            'imageFile' => '132.png'
+        ]
+        'type' => [
+            'imageFile' => 'image/png'
+        ]
+        'tmp_name' => [
+            'imageFile' => '/Applications/XAMPP/xamppfiles/temp/phpS1hwXn'
+        ]
+        'error' => [
+            'imageFile' => 0
+        ]
+        'size' => [
+            'imageFile' => 55392
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'i3cce82lfurmf7cvjtc5jmqmm6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcsL8CoZAMAAKuTr50AAAAK'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcsL8CoZAMAAKuTr50AAAAK'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '56469'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundarycA0FVIWnh4dAgKES'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=i3cce82lfurmf7cvjtc5jmqmm6'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '50334'
+    'REDIRECT_URL' => '/yii-test/web/site/order'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/order'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488399407.951
+    'REQUEST_TIME' => 1488399407
+]
