@@ -34,6 +34,9 @@ $script = <<< JS
     });
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);
+
+$this->registerCssFile("http://rm.0x5.ru/css/bootstrap-select.min.css");
+$this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 
 <div class="row">
@@ -41,7 +44,7 @@ $this->registerJs($script, yii\web\View::POS_READY);
 
         <?php
         if ($success)
-            echo '<div class="alert alert-success" role="alert">Zakaz oformlen</div>';
+            Yii::$app->response->redirect(Yii::getAlias('@web')."/site/success");
         ?>
         
         <h2 class="header-h2">Оставить заявку на запчасть</h2>
@@ -53,7 +56,21 @@ $this->registerJs($script, yii\web\View::POS_READY);
         ?>
         <?= $form->field($model, 'name')->textInput() ?>
         <?= $form->field($model, 'email')->textInput() ?>
-        <?= $form->field($model, 'city')->textInput() ?>
+    
+        <div class="form-group field-zakazform-city">
+            <label class="control-label" for="zakazform-city">Город</label>
+            <select class="selectpicker" title="Выберите регион" id="zakazform-city" name="ZakazForm[city]" data-live-search="true">
+                <?php
+                foreach ($reg_items as $item) {
+                    echo '<option value="'.$item['id'].'">'.$item['name'].'</option>';
+                }
+                ?>
+            </select>
+            <div class="help-block"></div>
+        </div>
+        
+        <?= $form->field($model, 'address')->textInput() ?>
+        <?= $form->field($model, 'typeTech')->dropDownList($tech); ?>
         <?= $form->field($model, 'items[]')->radioList(['1' => 'Самовывоз', '2' => 'Доставка']) ?>
         <?= $form->field($model, 'description')->textarea(['rows' => 3, 'cols' => 7]) ?>
         <?= $form->field($model, 'imageFile')->fileInput() ?>

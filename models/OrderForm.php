@@ -57,17 +57,22 @@ class OrderForm extends ActiveRecord {
     }
 
     public function saveRecord($post) {
+        date_default_timezone_set('UTC');
+        
         $params = [
             'id' => Guid::create_guid(),
             'name' => $post['title'],
+            'city' => $post['city'],
             'address' => $post['address'], //+
             'tech' => $post['typeTech'], //+
             'date_closed' => $post['date'],
             'time' => $post['time'], //+
             'clarify' => (!empty($post['clarify'])) ? true : false, //+
+            'currency_id' => '-99',
             'description' => $post['description'], //+
             'file' => $this->path, //+
-            'date_entered' => date('Y-m-d H:i:s')
+            'date_entered' => date("Y-m-d H:i:s"),
+            'date_modified' => date("Y-m-d H:i:s"),
         ];
         try {
             Yii::$app->db->createCommand()->insert('opportunities', $params)->execute();

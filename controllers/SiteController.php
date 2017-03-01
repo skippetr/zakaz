@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Description;
 use app\models\OrderForm;
 use app\models\ZakazForm;
 use Yii;
@@ -103,11 +104,14 @@ class SiteController extends Controller
                     $success = true;
             }
 
-            $tech = Technics::find()->all();
+            $tech = Technics::find()->where(['active' => '1', 'deleted' => '0'])->all();
             $tech = ArrayHelper::map($tech, 'id', 'name');
 
+            $reg = new Regions();
+            $reg_items = $reg->getRegions();
+
             if (\Yii::$app->user->identity->type == 0) //user is client
-                return $this->render('order', ['model' => $model, 'tech' => $tech, 'success' => $success]);
+                return $this->render('order', ['model' => $model, 'tech' => $tech, 'success' => $success, 'reg_items' => $reg_items]);
             else //user is master
                 $this->redirect(array('user/login'));
         } else
@@ -152,20 +156,28 @@ class SiteController extends Controller
                 if ($model->saveRecord(\Yii::$app->request->post('ZakazForm')))
                     $success = true;
             }
-            if (\Yii::$app->user->identity->type == 0) //user is client
-                return $this->render('zakaz', ['model' => $model, 'success' => $success]);
-            else //user is master
+            if (\Yii::$app->user->identity->type == 0) { //user is client
+                $reg = new Regions();
+                $reg_items = $reg->getRegions();
+
+                $tech = Technics::find()->where(['active' => '1', 'deleted' => '0'])->all();
+                $tech = ArrayHelper::map($tech, 'id', 'name');
+                return $this->render('zakaz', ['model' => $model, 'success' => $success, 'reg_items' => $reg_items , 'tech' => $tech]);
+            } else //user is master
                 $this->redirect(array('user/login'));
         } else
             $this->redirect(array('user/login'));
     }
 
-    public function actionZakazi($region = 'none') { //vivod spiska zayavok na zapchasti
+    public function actionZakazi($region = 'none', $tech = 'none') { //vivod spiska zayavok na zapchasti
         if (!Yii::$app->user->isGuest) {
             $reg = new Regions();
-            $reg_items = $reg->getRegions();
+            $tec = new Technics();
 
-            $query = ListInDB::getListOfZakazi($region);
+            $reg_items = $reg->getRegions();
+            $tec_items = $tec->getTechnics();
+
+            $query = ListInDB::getListOfZakazi($region, $tech);
 
             $pages = new Pagination(['totalCount' => ListInDB::$count]);
             $pages->pageSizeLimit = [1, 10];
@@ -173,7 +185,7 @@ class SiteController extends Controller
                 ->limit($pages->limit)
                 ->all();
 
-            $model = compact('reg_items', 'zakazi', 'pages');
+            $model = compact('reg_items', 'zakazi', 'pages', 'tec_items');
             if (\Yii::$app->user->identity->type == 1) //user is master
                 return $this->render('zakazi', ['model' => $model]);
             else //user is client
@@ -200,26 +212,31 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
-    /**
-     * Login action.
-     *
-     * @return string
-     */
-    public function actionLogin()
-    {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        }
-        return $this->render('login', [
-            'model' => $model,
-        ]);
+    public function actionDescription($id) {
+        $result = Description::getPost($id);
+        return $this->render('description' , ['model' => $result]);
     }
 
+//    /**
+//     * Login action.
+//     *
+//     * @return string
+//     */
+//    public function actionLogin()
+//    {
+//        if (!Yii::$app->user->isGuest) {
+//            return $this->goHome();
+//        }
+//
+//        $model = new LoginForm();
+//        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+//            return $this->goBack();
+//        }
+//        return $this->render('login', [
+//            'model' => $model,
+//        ]);
+//    }
+//
     /**
      * Logout action.
      *
@@ -231,41 +248,45 @@ class SiteController extends Controller
 
         return $this->goHome();
     }
-
-    /**
-     * Displays contact page.
-     *
-     * @return string
-     */
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
-            Yii::$app->session->setFlash('contactFormSubmitted');
-
-            return $this->refresh();
-        }
-        return $this->render('contact', [
-            'model' => $model,
-        ]);
-    }
-
-    /**
-     * Displays about page.
-     *
-     * @return string
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
-    }
-
-    public function actionTest() {
-        return $this->render('about');
-    }
     
-    private function checkMaster() {
-        
+    public function actionSuccess() {
+        return $this->render('success');
     }
+//
+//    /**
+//     * Displays contact page.
+//     *
+//     * @return string
+//     */
+//    public function actionContact()
+//    {
+//        $model = new ContactForm();
+//        if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
+//            Yii::$app->session->setFlash('contactFormSubmitted');
+//
+//            return $this->refresh();
+//        }
+//        return $this->render('contact', [
+//            'model' => $model,
+//        ]);
+//    }
+//
+//    /**
+//     * Displays about page.
+//     *
+//     * @return string
+//     */
+//    public function actionAbout()
+//    {
+//        return $this->render('about');
+//    }
+//
+//    public function actionTest() {
+//        return $this->render('about');
+//    }
+//
+//    private function checkMaster() {
+//
+//    }
 
 }

@@ -16,7 +16,7 @@ class Technics extends ActiveRecord {
 
     // returns array of tech's title
     public function getTechnics($tech = 'none') {
-        $technics = $this->find()->where(['active' => '1'])->asArray()->all();
+        $technics = $this->find()->where(['active' => '1', 'deleted' => '0'])->asArray()->all();
         return $technics;
     }
 

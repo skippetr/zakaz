@@ -11,6 +11,9 @@ use \yii\widgets\Pjax;
 
 $this->title = 'Заказы';
 $this->params['breadcrumbs'][] = $this->title;
+
+$this->registerCssFile("http://rm.0x5.ru/css/bootstrap-select.min.css");
+$this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 
 <div class="row padding-bot">
@@ -42,8 +45,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Ho60XGB-iaVDjFYF7aNtky1k6EjRxL0x&amp;width=100%&amp;height=240&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
                 </p>
                 <p class="text-right">Техника: <?= \app\models\Technics::findOne($item['tech'])['name'] ?></p>
-                <button type="button" class="btn btn-md btn-primary">Принять заявку</button>
-                <button type="button" class="btn btn-md btn-primary pull-right">Подробнее</button>
+                <!-- <button type="button" class="btn btn-md btn-primary">Принять заявку</button> -->
+                <a href="<?= Yii::getAlias('@web') ?>/site/description?id=<?= $item['id'] ?>" role="button" class="btn btn-primary btn-large">Подробнее</a>
             </div>
         </div>
 
@@ -57,26 +60,35 @@ $this->params['breadcrumbs'][] = $this->title;
         ?>
     </div>
 
+    <?php Pjax::end(); ?>
     <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
         <div class="">
             <h3 class="first">Регион</h3>
-            <select class="selectpicker" title="Выберите регион" onchange="javascript:location.href = this.value;">
+            <?php
+            $selectTitle = 'Выберите регион';
+            if (isset($_GET['region']))
+                $selectTitle = \app\models\Regions::findOne($_GET['region'])['name'];
+            ?>
+            <select class="selectpicker" title="<?= $selectTitle ?>" data-live-search="true" onchange="javascript:location.href = this.value;">
                 <?php
                 foreach ($model['reg_items'] as $item) {
                     echo '<option value="http://'.$_SERVER['SERVER_NAME'].yii\helpers\Url::current(['region'=>$item['id']]).'">'.$item['name'].'</option>';
                 }
                 ?>
             </select>
+            <?php //Pjax::begin(); ?>
             <h3>Вид техники</h3>
             <div class="list-group">
                 <?php
                 foreach ($model['tec_items'] as $item)  {
-                    echo Html::a($item['name'], 'http://'.$_SERVER['SERVER_NAME'].yii\helpers\Url::current(['tech'=>$item['id']]), ['class' => 'list-group-item']);
+                    $params = ['class' => 'list-group-item'];
+                    if (isset($_GET['tech']) && $_GET['tech'] == $item['id'])
+                        $params = ['class' => 'list-group-item active'];
+                    echo Html::a($item['name'], 'http://'.$_SERVER['SERVER_NAME'].yii\helpers\Url::current(['tech'=>$item['id']]), $params);
                 }
                 ?>
             </div>
+            <?php //Pjax::end(); ?>
         </div>
     </div>
-
-    <?php Pjax::end(); ?>
 </div>

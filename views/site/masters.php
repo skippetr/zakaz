@@ -11,6 +11,9 @@ use \yii\widgets\Pjax;
 
 $this->title = 'Мастера';
 $this->params['breadcrumbs'][] = $this->title;
+
+$this->registerCssFile("http://rm.0x5.ru/css/bootstrap-select.min.css");
+$this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 
 <?php
@@ -74,26 +77,36 @@ if (!Yii::$app->user->isGuest) {
         ?>
 
     </div>
-    
+    <?php Pjax::end(); ?>
     <div class="col-xs-12 col-xs-offset-0 col-sm-5 col-sm-offset-0 col-md-4 col-md-offset-2 col-lg-4 col-lg-offset-2">
         <div class="">
             <h3 class="first">Регион</h3>
-            <select class="selectpicker" title="Выберите регион" onchange="javascript:location.href = this.value;">
+            <?php
+                $selectTitle = 'Выберите регион';
+                if (isset($_GET['region']))
+                    $selectTitle = \app\models\Regions::findOne($_GET['region'])['name'];
+            ?>
+            <select class="selectpicker" title="<?= $selectTitle ?>" data-live-search="true" onchange="javascript:location.href = this.value;">
                 <?php
-                    foreach ($model['reg_items'] as $item) {
-                        echo '<option value="http://'.$_SERVER['SERVER_NAME'].yii\helpers\Url::current(['region'=>$item['id']]).'">'.$item['name'].'</option>';
-                    }
+                foreach ($model['reg_items'] as $item) {
+                    echo '<option value="http://'.$_SERVER['SERVER_NAME'].yii\helpers\Url::current(['region'=>$item['id']]).'">'.$item['name'].'</option>';
+                }
                 ?>
             </select>
+            <div class="help-block"></div>
+            <?php //Pjax::begin(); ?>
             <h3>Вид техники</h3>
             <div class="list-group">
                 <?php
                     foreach ($model['tec_items'] as $item)  {
-                        echo Html::a($item['name'], 'http://'.$_SERVER['SERVER_NAME'].yii\helpers\Url::current(['tech'=>$item['id']]), ['class' => 'list-group-item']);
+                        $params = ['class' => 'list-group-item'];
+                        if (isset($_GET['tech']) && $_GET['tech'] == $item['id'])
+                            $params = ['class' => 'list-group-item active'];
+                        echo Html::a($item['name'], 'http://'.$_SERVER['SERVER_NAME'].yii\helpers\Url::current(['tech'=>$item['id']]), $params);
                     }
                 ?>
             </div>
+            <?php //Pjax::end(); ?>
         </div>
     </div>
-    <?php Pjax::end(); ?>
 </div>

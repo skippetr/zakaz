@@ -50925,3 +50925,1875 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1487935264.961
     'REQUEST_TIME' => 1487935264
 ]
+2017-02-28 19:48:10 [::1][13][sij0csdicnkgvvcqducagftvt2][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Cannot use a scalar value as an array' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/helpers/BaseHtml.php:261
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/helpers/BaseHtml.php(261): yii\base\ErrorHandler->handleError(2, 'Cannot use a sc...', '/Applications/X...', 261, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/View.php(475): yii\helpers\BaseHtml::jsFile('http://rm.0x5.r...', 4)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/zakazi.php(19): yii\web\View->registerJsFile('http://rm.0x5.r...', 4)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(app\controllers\SiteController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('zakazi', Array, Object(app\controllers\SiteController))
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(178): yii\base\Controller->render('zakazi', Array)
+#8 [internal function]: app\controllers\SiteController->actionZakazi('none')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('zakazi', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/zakazi', Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#15 {main}
+2017-02-28 19:48:10 [::1][13][sij0csdicnkgvvcqducagftvt2][info][application] $_COOKIE = [
+    'PHPSESSID' => 'sij0csdicnkgvvcqducagftvt2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 13
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLXF6cCoZAMAAAjN6swAAAAI'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLXF6cCoZAMAAAjN6swAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/orders'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=sij0csdicnkgvvcqducagftvt2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '61287'
+    'REDIRECT_URL' => '/yii-test/web/site/zakazi'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/zakazi'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488307689.956
+    'REQUEST_TIME' => 1488307689
+]
+2017-02-28 20:06:52 [::1][13][sij0csdicnkgvvcqducagftvt2][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\Sort' not found' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/Regions.php:18
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-02-28 20:06:51 [::1][13][sij0csdicnkgvvcqducagftvt2][info][application] $_GET = [
+    'region' => '47'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'sij0csdicnkgvvcqducagftvt2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 13
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLXKS8CoZAMAABNUNgAAAAAC'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLXKS8CoZAMAABNUNgAAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/orders'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=sij0csdicnkgvvcqducagftvt2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '61571'
+    'REDIRECT_URL' => '/yii-test/web/site/orders'
+    'REDIRECT_QUERY_STRING' => 'region=47'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'region=47'
+    'REQUEST_URI' => '/yii-test/web/site/orders?region=47'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488308811.012
+    'REQUEST_TIME' => 1488308811
+]
+2017-03-01 17:22:44 [::1][12][g1euep7vdgdquvelbr84lskge5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: reg_items' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/zakaz.php:64
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/zakaz.php(64): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Applications/X...', 64, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(app\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('zakaz', Array, Object(app\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(159): yii\base\Controller->render('zakaz', Array)
+#6 [internal function]: app\controllers\SiteController->actionZakaz()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('zakaz', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/zakaz', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-03-01 17:22:44 [::1][12][g1euep7vdgdquvelbr84lskge5][info][application] $_COOKIE = [
+    'PHPSESSID' => 'g1euep7vdgdquvelbr84lskge5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLb1VMCoZAMAAAjMRDEAAAAH'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLb1VMCoZAMAAAjMRDEAAAAH'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g1euep7vdgdquvelbr84lskge5'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '64284'
+    'REDIRECT_URL' => '/yii-test/web/site/zakaz'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/zakaz'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488385364.654
+    'REQUEST_TIME' => 1488385364
+]
+2017-03-01 17:25:11 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'else' (T_ELSE)' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php:162
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-01 17:25:11 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => 'g1euep7vdgdquvelbr84lskge5'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLb158CoZAMAAAjOyoYAAAAJ'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLb158CoZAMAAAjOyoYAAAAJ'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g1euep7vdgdquvelbr84lskge5'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '64287'
+    'REDIRECT_URL' => '/yii-test/web/site/zakaz'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/zakaz'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488385511.14
+    'REQUEST_TIME' => 1488385511
+]
+2017-03-01 17:52:08 [::1][12][g1euep7vdgdquvelbr84lskge5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 1' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/ZakazForm.php:65
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/ZakazForm.php(65): yii\base\ErrorHandler->handleError(8, 'Undefined offse...', '/Applications/X...', 65, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(155): app\models\ZakazForm->saveRecord(Array)
+#2 [internal function]: app\controllers\SiteController->actionZakaz()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('zakaz', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/zakaz', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2017-03-01 17:52:08 [::1][12][g1euep7vdgdquvelbr84lskge5][info][application] $_POST = [
+    'ZakazForm' => [
+        'name' => 'localhost'
+        'email' => '1@1.ru'
+        'city' => '47'
+        'address' => 'камчасткая'
+        'items' => [
+            0 => ''
+        ]
+        'description' => 'надо срочно ремонт'
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'ZakazForm' => [
+        'name' => [
+            'imageFile' => ''
+        ]
+        'type' => [
+            'imageFile' => ''
+        ]
+        'tmp_name' => [
+            'imageFile' => ''
+        ]
+        'error' => [
+            'imageFile' => 4
+        ]
+        'size' => [
+            'imageFile' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g1euep7vdgdquvelbr84lskge5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLb8OMCoZAMAAA5bYKYAAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLb8OMCoZAMAAA5bYKYAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1008'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary4XL4D3g8V0E05grn'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/zakaz'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g1euep7vdgdquvelbr84lskge5'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '64619'
+    'REDIRECT_URL' => '/yii-test/web/site/zakaz'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/zakaz'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488387128.567
+    'REQUEST_TIME' => 1488387128
+]
+2017-03-01 18:22:54 [::1][12][g1euep7vdgdquvelbr84lskge5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'date_default_timezone_set(): Timezone ID 'UTC+3' is invalid' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/ZakazForm.php:59
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'date_default_ti...', '/Applications/X...', 59, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/ZakazForm.php(59): date_default_timezone_set('UTC+3')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(155): app\models\ZakazForm->saveRecord(Array)
+#3 [internal function]: app\controllers\SiteController->actionZakaz()
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('zakaz', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/zakaz', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-03-01 18:22:53 [::1][12][g1euep7vdgdquvelbr84lskge5][info][application] $_POST = [
+    'ZakazForm' => [
+        'name' => '1'
+        'email' => '1@1.ru'
+        'city' => '7'
+        'address' => ''
+        'items' => [
+            0 => ''
+        ]
+        'description' => ''
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'ZakazForm' => [
+        'name' => [
+            'imageFile' => ''
+        ]
+        'type' => [
+            'imageFile' => ''
+        ]
+        'tmp_name' => [
+            'imageFile' => ''
+        ]
+        'error' => [
+            'imageFile' => 4
+        ]
+        'size' => [
+            'imageFile' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g1euep7vdgdquvelbr84lskge5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcDbMCoZAMAALLNMhEAAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcDbMCoZAMAALLNMhEAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '945'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryBMv0aBo8Mia5w3GS'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/zakaz'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g1euep7vdgdquvelbr84lskge5'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '64865'
+    'REDIRECT_URL' => '/yii-test/web/site/zakaz'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/zakaz'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488388972.969
+    'REQUEST_TIME' => 1488388972
+]
+2017-03-01 20:29:13 [::1][12][g1euep7vdgdquvelbr84lskge5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function app\models\imlode()' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/ZakazForm.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-01 20:29:12 [::1][12][g1euep7vdgdquvelbr84lskge5][info][application] $_POST = [
+    'ZakazForm' => [
+        'name' => '1'
+        'email' => '1@1.ru'
+        'city' => ''
+        'address' => ''
+        'items' => [
+            0 => ''
+        ]
+        'description' => ''
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'ZakazForm' => [
+        'name' => [
+            'imageFile' => ''
+        ]
+        'type' => [
+            'imageFile' => ''
+        ]
+        'tmp_name' => [
+            'imageFile' => ''
+        ]
+        'error' => [
+            'imageFile' => 4
+        ]
+        'size' => [
+            'imageFile' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g1euep7vdgdquvelbr84lskge5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcE58CoZAMAAK6zx1gAAAAA'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcE58CoZAMAAK6zx1gAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '944'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary7cqQwiKtsA6rYhiD'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/zakaz'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g1euep7vdgdquvelbr84lskge5'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '64950'
+    'REDIRECT_URL' => '/yii-test/web/site/zakaz'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/zakaz'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488389351.711
+    'REQUEST_TIME' => 1488389351
+]
+2017-03-01 18:51:30 [::1][12][g1euep7vdgdquvelbr84lskge5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: region' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/masters.php:86
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/masters.php(86): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/X...', 86, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(app\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('masters', Array, Object(app\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(142): yii\base\Controller->render('masters', Array)
+#6 [internal function]: app\controllers\SiteController->actionMasters('none', 'none')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('masters', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/masters', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-03-01 18:51:29 [::1][12][g1euep7vdgdquvelbr84lskge5][info][application] $_COOKIE = [
+    'PHPSESSID' => 'g1euep7vdgdquvelbr84lskge5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcKIcCoZAMAAA5bYLYAAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcKIcCoZAMAAA5bYLYAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/order'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g1euep7vdgdquvelbr84lskge5'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '65095'
+    'REDIRECT_URL' => '/yii-test/web/site/masters'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/masters'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488390689.102
+    'REQUEST_TIME' => 1488390689
+]
+2017-03-01 18:57:30 [::1][12][g1euep7vdgdquvelbr84lskge5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: region' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/masters.php:87
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/masters.php(87): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/X...', 87, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(app\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('masters', Array, Object(app\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(142): yii\base\Controller->render('masters', Array)
+#6 [internal function]: app\controllers\SiteController->actionMasters('8', 'none')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('masters', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/masters', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-03-01 18:57:28 [::1][12][g1euep7vdgdquvelbr84lskge5][info][application] $_GET = [
+    'region' => '8'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g1euep7vdgdquvelbr84lskge5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcLiMCoZAMAAKyI8BQAAAAB'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcLiMCoZAMAAKyI8BQAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/masters'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g1euep7vdgdquvelbr84lskge5'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '65175'
+    'REDIRECT_URL' => '/yii-test/web/site/masters'
+    'REDIRECT_QUERY_STRING' => 'region=8'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'region=8'
+    'REQUEST_URI' => '/yii-test/web/site/masters?region=8'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488391048.618
+    'REQUEST_TIME' => 1488391048
+]
+2017-03-01 18:58:42 [::1][12][g1euep7vdgdquvelbr84lskge5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: region' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/masters.php:87
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/masters.php(87): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/X...', 87, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(app\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('masters', Array, Object(app\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(142): yii\base\Controller->render('masters', Array)
+#6 [internal function]: app\controllers\SiteController->actionMasters('7', 'none')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('masters', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/masters', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-03-01 18:58:42 [::1][12][g1euep7vdgdquvelbr84lskge5][info][application] $_GET = [
+    'region' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g1euep7vdgdquvelbr84lskge5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcL0sCoZAMAALMslNUAAAAF'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcL0sCoZAMAALMslNUAAAAF'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/masters'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g1euep7vdgdquvelbr84lskge5'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '65197'
+    'REDIRECT_URL' => '/yii-test/web/site/masters'
+    'REDIRECT_QUERY_STRING' => 'region=7'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'region=7'
+    'REQUEST_URI' => '/yii-test/web/site/masters?region=7'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488391122.662
+    'REQUEST_TIME' => 1488391122
+]
+2017-03-01 18:59:01 [::1][12][g1euep7vdgdquvelbr84lskge5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Allowed memory size of 134217728 bytes exhausted (tried to allocate 72 bytes)' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/ListInDB.php:73
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-01 18:59:00 [::1][12][g1euep7vdgdquvelbr84lskge5][info][application] $_GET = [
+    'region' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g1euep7vdgdquvelbr84lskge5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcL5MCoZAMAALLNMhsAAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcL5MCoZAMAALLNMhsAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/masters'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g1euep7vdgdquvelbr84lskge5'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '65200'
+    'REDIRECT_URL' => '/yii-test/web/site/masters'
+    'REDIRECT_QUERY_STRING' => 'region=7'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'region=7'
+    'REQUEST_URI' => '/yii-test/web/site/masters?region=7'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488391140.328
+    'REQUEST_TIME' => 1488391140
+]
+2017-03-01 18:59:26 [::1][12][g1euep7vdgdquvelbr84lskge5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Allowed memory size of 134217728 bytes exhausted (tried to allocate 72 bytes)' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/ListInDB.php:73
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-01 18:59:26 [::1][12][g1euep7vdgdquvelbr84lskge5][info][application] $_GET = [
+    'region' => '7'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'g1euep7vdgdquvelbr84lskge5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcL-sCoZAMAALGvXjwAAAAI'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcL-sCoZAMAALGvXjwAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/masters'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=g1euep7vdgdquvelbr84lskge5'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '65204'
+    'REDIRECT_URL' => '/yii-test/web/site/masters'
+    'REDIRECT_QUERY_STRING' => 'region=7'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'region=7'
+    'REQUEST_URI' => '/yii-test/web/site/masters?region=7'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488391166.017
+    'REQUEST_TIME' => 1488391166
+]
+2017-03-01 19:34:33 [::1][12][st4v1q1m6ds9cted09vc9epgj5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: tech' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/zakaz.php:73
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/zakaz.php(73): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Applications/X...', 73, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(app\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('zakaz', Array, Object(app\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(161): yii\base\Controller->render('zakaz', Array)
+#6 [internal function]: app\controllers\SiteController->actionZakaz()
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('zakaz', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/zakaz', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-03-01 19:34:33 [::1][12][st4v1q1m6ds9cted09vc9epgj5][info][application] $_COOKIE = [
+    'PHPSESSID' => 'st4v1q1m6ds9cted09vc9epgj5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcUOcCoZAMAATekcowAAAAD'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcUOcCoZAMAATekcowAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=st4v1q1m6ds9cted09vc9epgj5'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49215'
+    'REDIRECT_URL' => '/yii-test/web/site/zakaz'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/zakaz'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488393273.458
+    'REQUEST_TIME' => 1488393273
+]
+2017-03-01 19:44:34 [::1][13][vh76qic9hv39efnnugpo2k3795][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.zkz_spare' doesn't exist' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/db/Query.php(431): yii\db\Command->queryScalar()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/db/Query.php(319): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/ListInDB.php(64): yii\db\Query->count()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(179): app\models\ListInDB::getListOfZakazi('<span class="st...')
+#6 [internal function]: app\controllers\SiteController->actionZakazi('<span class="st...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.zkz_spare' doesn't exist
+The SQL being executed was: SELECT COUNT(*) FROM `zkz_spare`' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/db/Query.php(431): yii\db\Command->queryScalar()
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/db/Query.php(319): yii\db\Query->queryScalar('<span class="st...', '<span class="ke...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/ListInDB.php(64): yii\db\Query->count()
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(179): app\models\ListInDB::getListOfZakazi('<span class="st...')
+#6 [internal function]: app\controllers\SiteController->actionZakazi('<span class="st...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[<span class="s...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[]')
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'test.zkz_spare' doesn't exist
+)
+
+2017-03-01 19:44:34 [::1][13][vh76qic9hv39efnnugpo2k3795][info][application] $_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 13
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcWksCoZAMAATekcpEAAAAD'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcWksCoZAMAATekcpEAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/orders'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49340'
+    'REDIRECT_URL' => '/yii-test/web/site/zakazi'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/zakazi'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488393874.051
+    'REQUEST_TIME' => 1488393874
+]
+2017-03-01 20:11:24 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Description' not found' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php:215
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-01 20:11:23 [::1][-][-][info][application] $_GET = [
+    'id' => '12b320d9-11e4-3e49-0e18-58b7059a7de8'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcc2sCoZAMAALLNMkQAAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcc2sCoZAMAALLNMkQAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49496'
+    'REDIRECT_URL' => '/yii-test/web/site/description'
+    'REDIRECT_QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'REQUEST_URI' => '/yii-test/web/site/description?id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488395482.979
+    'REQUEST_TIME' => 1488395482
+]
+2017-03-01 20:12:05 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function app\models\isEmpty()' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/Description.php:14
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-01 20:12:04 [::1][-][-][info][application] $_GET = [
+    'id' => '12b320d9-11e4-3e49-0e18-58b7059a7de8'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcdA8CoZAMAATekcpMAAAAD'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcdA8CoZAMAATekcpMAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49498'
+    'REDIRECT_URL' => '/yii-test/web/site/description'
+    'REDIRECT_QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'REQUEST_URI' => '/yii-test/web/site/description?id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488395523.786
+    'REQUEST_TIME' => 1488395523
+]
+2017-03-01 20:12:31 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: name' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/Description.php:15
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/Description.php(15): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/X...', 15, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(216): app\models\Description::getPost('12b320d9-11e4-3...')
+#2 [internal function]: app\controllers\SiteController->actionDescription('12b320d9-11e4-3...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('description', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/descriptio...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2017-03-01 20:12:31 [::1][-][-][info][application] $_GET = [
+    'id' => '12b320d9-11e4-3e49-0e18-58b7059a7de8'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcdH8CoZAMAALGvXloAAAAI'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcdH8CoZAMAALGvXloAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49501'
+    'REDIRECT_URL' => '/yii-test/web/site/description'
+    'REDIRECT_QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'REQUEST_URI' => '/yii-test/web/site/description?id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488395551.341
+    'REQUEST_TIME' => 1488395551
+]
+2017-03-01 20:12:46 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$query1' (T_VARIABLE)' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/models/Description.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-03-01 20:12:46 [::1][-][-][info][application] $_GET = [
+    'id' => '12b320d9-11e4-3e49-0e18-58b7059a7de8'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcdLsCoZAMAAA5bYNMAAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcdLsCoZAMAAA5bYNMAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49506'
+    'REDIRECT_URL' => '/yii-test/web/site/description'
+    'REDIRECT_QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'REQUEST_URI' => '/yii-test/web/site/description?id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488395566.568
+    'REQUEST_TIME' => 1488395566
+]
+2017-03-01 20:19:33 [::1][13][vh76qic9hv39efnnugpo2k3795][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/des' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('des', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/des', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-03-01 20:19:32 [::1][13][vh76qic9hv39efnnugpo2k3795][info][application] $_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 13
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcexMCoZAMAALLNMkUAAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcexMCoZAMAALLNMkUAAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49549'
+    'REDIRECT_URL' => '/yii-test/web/site/des'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/des'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488395972.429
+    'REQUEST_TIME' => 1488395972
+]
+2017-03-01 20:19:38 [::1][13][vh76qic9hv39efnnugpo2k3795][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Отсутствуют обязательные параметры: id' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('description', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/descriptio...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-03-01 20:19:37 [::1][13][vh76qic9hv39efnnugpo2k3795][info][application] $_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 13
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLceycCoZAMAALGvXl8AAAAI'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLceycCoZAMAALGvXl8AAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.yandex.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49550'
+    'REDIRECT_URL' => '/yii-test/web/site/description'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/description'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488395977.925
+    'REQUEST_TIME' => 1488395977
+]
+2017-03-01 20:20:27 [::1][13][vh76qic9hv39efnnugpo2k3795][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Отсутствуют обязательные параметры: id' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Controller.php:149
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('description', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/descriptio...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-03-01 20:20:27 [::1][13][vh76qic9hv39efnnugpo2k3795][info][application] $_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 13
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLce@8CoZAMAAKyI8DcAAAAB'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLce@8CoZAMAAKyI8DcAAAAB'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://www.yandex.ru/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49561'
+    'REDIRECT_URL' => '/yii-test/web/site/description'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/description'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488396027.156
+    'REQUEST_TIME' => 1488396027
+]
+2017-03-01 20:20:35 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/description.php:18
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/description.php(18): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/X...', 18, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(app\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('description', Array, Object(app\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(217): yii\base\Controller->render('description', Array)
+#6 [internal function]: app\controllers\SiteController->actionDescription('12b320d9-11e4-3...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('description', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/descriptio...', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-03-01 20:20:35 [::1][-][-][info][application] $_GET = [
+    'id' => '12b320d9-11e4-3e49-0e18-58b7059a7de8'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcfA8CoZAMAATekcpUAAAAD'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcfA8CoZAMAATekcpUAAAAD'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49563'
+    'REDIRECT_URL' => '/yii-test/web/site/description'
+    'REDIRECT_QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'REQUEST_URI' => '/yii-test/web/site/description?id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488396035.399
+    'REQUEST_TIME' => 1488396035
+]
+2017-03-01 20:27:51 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: item' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/description.php:27
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/description.php(27): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', '/Applications/X...', 27, Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(app\controllers\SiteController))
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('description', Array, Object(app\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(217): yii\base\Controller->render('description', Array)
+#6 [internal function]: app\controllers\SiteController->actionDescription('12b320d9-11e4-3...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('description', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/descriptio...', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#13 {main}
+2017-03-01 20:27:51 [::1][-][-][info][application] $_GET = [
+    'id' => '12b320d9-11e4-3e49-0e18-58b7059a7de8'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcgt8CoZAMAAK6zx3wAAAAA'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcgt8CoZAMAAK6zx3wAAAAA'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/zakazi'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49660'
+    'REDIRECT_URL' => '/yii-test/web/site/description'
+    'REDIRECT_QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'REQUEST_URI' => '/yii-test/web/site/description?id=12b320d9-11e4-3e49-0e18-58b7059a7de8'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488396471.026
+    'REQUEST_TIME' => 1488396471
+]
+2017-03-01 20:32:26 [::1][13][vh76qic9hv39efnnugpo2k3795][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/logout' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('logout', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/logout/', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-03-01 20:32:26 [::1][13][vh76qic9hv39efnnugpo2k3795][info][application] $_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 13
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLchysCoZAMAALHBpFoAAAAC'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLchysCoZAMAALHBpFoAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/orders'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49698'
+    'REDIRECT_URL' => '/yii-test/web/site/logout/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/logout/'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488396746.627
+    'REQUEST_TIME' => 1488396746
+]
+2017-03-01 20:32:32 [::1][13][vh76qic9hv39efnnugpo2k3795][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/logout' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('logout', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/logout/', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-03-01 20:32:31 [::1][13][vh76qic9hv39efnnugpo2k3795][info][application] $_COOKIE = [
+    'PHPSESSID' => 'vh76qic9hv39efnnugpo2k3795'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 13
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLchz8CoZAMAALHBpFwAAAAC'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLchz8CoZAMAALHBpFwAAAAC'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '0'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/logout/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=vh76qic9hv39efnnugpo2k3795'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49698'
+    'REDIRECT_URL' => '/yii-test/web/site/logout/'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/logout/'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488396751.911
+    'REQUEST_TIME' => 1488396751
+]
+2017-03-01 22:33:45 [::1][12][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: yii\web\View::redirect()' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Component.php:290
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/zakaz.php(47): yii\base\Component->__call('redirect', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/views/site/zakaz.php(47): yii\web\View->redirect(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(328): require('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(app\controllers\SiteController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('zakaz', Array, Object(app\controllers\SiteController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/yii-test/controllers/SiteController.php(165): yii\base\Controller->render('zakaz', Array)
+#7 [internal function]: app\controllers\SiteController->actionZakaz()
+#8 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('zakaz', Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/zakaz', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2017-03-01 22:33:45 [::1][12][-][info][application] $_POST = [
+    'ZakazForm' => [
+        'name' => 'qwe'
+        'email' => 'qwe@qwe.ru'
+        'city' => ''
+        'address' => ''
+        'typeTech' => '10510532-48db-6b72-8af9-58074f099c86'
+        'items' => [
+            0 => ''
+        ]
+        'description' => ''
+        'imageFile' => ''
+    ]
+]
+
+$_FILES = [
+    'ZakazForm' => [
+        'name' => [
+            'imageFile' => ''
+        ]
+        'type' => [
+            'imageFile' => ''
+        ]
+        'tmp_name' => [
+            'imageFile' => ''
+        ]
+        'error' => [
+            'imageFile' => 4
+        ]
+        'size' => [
+            'imageFile' => 0
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'llepuj2tbrkrkbqt2u2qf3ddg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLciGcCoZAMAALLNMk8AAAAE'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLciGcCoZAMAALLNMk8AAAAE'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1092'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryWppV7OrBSPXttLTp'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/zakaz'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=llepuj2tbrkrkbqt2u2qf3ddg3'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49716'
+    'REDIRECT_URL' => '/yii-test/web/site/zakaz'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/zakaz'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488396825.128
+    'REQUEST_TIME' => 1488396825
+]
+2017-03-01 20:35:44 [::1][12][llepuj2tbrkrkbqt2u2qf3ddg3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/site/success".' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/site/succe...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-03-01 20:35:44 [::1][12][llepuj2tbrkrkbqt2u2qf3ddg3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'llepuj2tbrkrkbqt2u2qf3ddg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcikMCoZAMAAA5bYOIAAAAG'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcikMCoZAMAAA5bYOIAAAAG'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/yii-test/web/site/zakaz'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=llepuj2tbrkrkbqt2u2qf3ddg3'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49772'
+    'REDIRECT_URL' => '/yii-test/web/site/site/success'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/site/success'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488396944.087
+    'REQUEST_TIME' => 1488396944
+]
+2017-03-01 20:35:50 [::1][12][llepuj2tbrkrkbqt2u2qf3ddg3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/success' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('success', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/success', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/yii-test/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-03-01 20:35:49 [::1][12][llepuj2tbrkrkbqt2u2qf3ddg3][info][application] $_COOKIE = [
+    'PHPSESSID' => 'llepuj2tbrkrkbqt2u2qf3ddg3'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 12
+]
+
+$_SERVER = [
+    'REDIRECT_UNIQUE_ID' => 'WLcilcCoZAMAALGvXmYAAAAI'
+    'REDIRECT_STATUS' => '200'
+    'UNIQUE_ID' => 'WLcilcCoZAMAALGvXmYAAAAI'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 YaBrowser/17.1.0.2186 Yowser/2.5 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=llepuj2tbrkrkbqt2u2qf3ddg3'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Unix) OpenSSL/1.0.2h PHP/5.6.24 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/yii-test/web/index.php'
+    'REMOTE_PORT' => '49776'
+    'REDIRECT_URL' => '/yii-test/web/site/success'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii-test/web/site/success'
+    'SCRIPT_NAME' => '/yii-test/web/index.php'
+    'PHP_SELF' => '/yii-test/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1488396949.968
+    'REQUEST_TIME' => 1488396949
+]
