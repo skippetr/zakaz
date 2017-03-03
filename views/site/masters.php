@@ -98,7 +98,8 @@ if (!Yii::$app->user->isGuest) {
             <h3>Вид техники</h3>
             <div class="list-group">
                 <?php
-                    foreach ($model['tec_items'] as $item)  {
+                echo Html::a('Сбросить фильтр', 'http://'.$_SERVER['SERVER_NAME'].yii\helpers\Url::current(['tech'=>'none', 'region' => 'none']), ['class' => 'list-group-item']);
+                foreach ($model['tec_items'] as $item)  {
                         $params = ['class' => 'list-group-item'];
                         if (isset($_GET['tech']) && $_GET['tech'] == $item['id'])
                             $params = ['class' => 'list-group-item active'];

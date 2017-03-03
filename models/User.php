@@ -4,6 +4,14 @@ namespace app\models;
 
 class User extends \dektrium\user\models\User
 {
+    public function init() {
+        $this->on(self::BEFORE_REGISTER, function() {
+            $this->username = $this->email;
+        });
+
+        parent::init();
+    }
+    
     public function scenarios()
     {
         $scenarios = parent::scenarios();
@@ -25,6 +33,7 @@ class User extends \dektrium\user\models\User
 //        $rules['fieldRequired'] = ['field', 'required'];
 //        $rules['fieldLength']   = ['field', 'string', 'max' => 10];
 
+        unset($rules['usernameRequired']);
         return $rules;
     }
     

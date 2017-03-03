@@ -75,7 +75,7 @@ $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' 
         <?= $form->field($model, 'description')->textarea(['rows' => 3, 'cols' => 7]) ?>
         <?= $form->field($model, 'imageFile')->fileInput() ?>
 
-        <div id="thumb"></div>
+        <div id="thumb"></div><br>
 
         <div class="form-group">
             <div class="col-lg-offset-1 col-lg-11">

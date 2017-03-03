@@ -11,6 +11,7 @@
 
 namespace dektrium\user\controllers;
 
+use yii;
 use dektrium\user\Finder;
 use dektrium\user\models\RegistrationForm;
 use dektrium\user\models\ResendForm;
@@ -104,7 +105,7 @@ class RegistrationController extends Controller
             'access' => [
                 'class' => AccessControl::className(),
                 'rules' => [
-                    ['allow' => true, 'actions' => ['register', 'connect'], 'roles' => ['?']],
+                    ['allow' => true, 'actions' => ['register', 'connect'], 'roles' => ['?', '@']],
                     ['allow' => true, 'actions' => ['confirm', 'resend'], 'roles' => ['?', '@']],
                 ],
             ],
@@ -121,6 +122,10 @@ class RegistrationController extends Controller
      */
     public function actionRegister()
     {
+        if (!Yii::$app->user->isGuest) {
+            Yii::$app->response->redirect(Yii::getAlias('@web'));
+        }
+
         if (!$this->module->enableRegistration) {
             throw new NotFoundHttpException();
         }

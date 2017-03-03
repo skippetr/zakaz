@@ -25,7 +25,7 @@ $this->registerJsFile('http://localhost/yii-test/web/assets/script.js', ['depend
                     'id' => 'registration-form',
                 ]); ?>
 
-                <?= $form->field($model, 'username') ?>
+                <?php //$form->field($model, 'username') ?>
 
                 <?= $form->field($model, 'email') ?>
 
@@ -55,7 +55,7 @@ $this->registerJsFile('http://localhost/yii-test/web/assets/script.js', ['depend
                     'id' => 'registration-form1',
                 ]); ?>
 
-                <?= $form->field($model, 'username') ?>
+                <?php //$form->field($model, 'username') ?>
 
                 <?= $form->field($model, 'email') ?>
                 

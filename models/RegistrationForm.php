@@ -19,6 +19,7 @@ class RegistrationForm extends \dektrium\user\models\RegistrationForm
 //        $rules['fieldRequired'] = ['field', 'required'];
         $rules['typeLength']   = ['type', 'number', 'max' => 2];
         $rules['rateLength']   = ['rate', 'number', 'max' => 3];
+        unset($rules['usernameRequired']);
         return $rules;
     }
 }

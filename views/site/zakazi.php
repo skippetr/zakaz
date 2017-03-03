@@ -45,8 +45,8 @@ $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' 
                         <p><?= $item['description'] ?></p>
                         <p class="text-right">Город: <?= \app\models\Regions::findOne($item['city'])['name'] ?></p>
                         <!-- <button type="button" class="btn btn-md btn-primary">Принять заявку</button> -->
+                        <img src="<?= $item['file'] ?>" style="width: 200px;">
                         <a href="<?= Yii::getAlias('@web') ?>/site/description?id=<?= $item['id'] ?>" role="button" class="btn btn-primary btn-large">Подробнее</a>
-                        <img src="<?= $item['file'] ?>">
                     </div>
                 </div>
 
@@ -79,6 +79,7 @@ $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' 
             <h3>Вид техники</h3>
             <div class="list-group">
                 <?php
+                echo Html::a('Сбросить фильтр', 'http://'.$_SERVER['SERVER_NAME'].yii\helpers\Url::current(['tech'=>'none', 'region' => 'none']), ['class' => 'list-group-item']);
                 foreach ($model['tec_items'] as $item)  {
                     $params = ['class' => 'list-group-item'];
                     if (isset($_GET['tech']) && $_GET['tech'] == $item['id'])
