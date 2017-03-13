@@ -47,7 +47,7 @@ class OrderForm extends ActiveRecord {
     public function upload() {
         if ($_FILES['OrderForm']['error']['imageFile'] == 0) {
             if (!$this->validate()) {
-                $this->path = '/var/www/html/yii-test/uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension;
+                $this->path = '/var/www/html/yii/uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension;
                 $this->imageFile->saveAs($this->path);
                 return true;
             } else {
@@ -62,7 +62,7 @@ class OrderForm extends ActiveRecord {
         $params = [
             'id' => Guid::create_guid(),
             'name' => $post['title'],
-            'city' => $post['city'],
+            'city' => ($post['city'] == 'none') ? '0' : $post['city'],
             'address' => $post['address'], //+
             'tech' => $post['typeTech'], //+
             'date_closed' => $post['date'],

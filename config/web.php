@@ -52,23 +52,23 @@ $config = [
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             'viewPath' => '@app/mailer',
-            'useFileTransport' => true,
+            'useFileTransport' => false,
             'transport' => [
                 'class' => 'Swift_SmtpTransport',
-                'host' => 'smtp.gmail.com',
-                'username' => 'chyvak1@gmail.com',
-                'password' => '',
-                'port' => '587',
-                'encryption' => 'tls',
+                'host' => 'smtp.yandex.ru',
+                'username' => 'yiiwebdev@yandex.ru',
+                'password' => 'root123',
+                'port' => '465',
+                'encryption' => 'ssl',
             ],
-//             если понадобится отправлять письма через стандартную ф-ию mail()
-//            'messageConfig' => [
-//                'charset' => 'UTF-8',
-//                'from' => ['no-reply@app.com' => 'Сайт по ремонту техники'],
-//            ],
-//            'transport' => [
-//                'class' => 'Swift_MailTransport',
-//            ],
+            // если понадобится отправлять письма через стандартную ф-ию mail()
+            'messageConfig' => [
+                'charset' => 'UTF-8',
+                'from' => ['yiiwebdev@yandex.ru' => 'Ремонт'],
+            ],
+            ///'transport' => [
+            //    'class' => 'Swift_MailTransport',
+            //],
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

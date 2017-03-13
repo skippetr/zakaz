@@ -48,7 +48,7 @@ class ZakazForm extends ActiveRecord {
     public function upload() {
         if ($_FILES['ZakazForm']['error']['imageFile'] == 0) {
             if (!$this->validate()) {
-                $this->path = '/var/www/html/yii-test/uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension;
+                $this->path = '/var/www/html/yii/uploads/' . $this->imageFile->baseName . '.' . $this->imageFile->extension;
                 $this->imageFile->saveAs($this->path);
                 return true;
             } else {
@@ -64,7 +64,7 @@ class ZakazForm extends ActiveRecord {
             'id' => Guid::create_guid(),
             'name' => $post['name'],
             'email' => $post['email'],
-            'city' => $post['city'],
+            'city' => ($post['city'] == 'none') ? '0' : $post['city'],
             'address' => $post['address'],
             'method' => implode('', array_values($post['items'])),
             'description' => $post['description'],

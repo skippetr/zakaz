@@ -15,7 +15,10 @@ class Regions extends ActiveRecord {
     }
 
     public function getRegions($reg = 'none') {
+	$arr = [['id' => 'none', 'name' => 'Любой город']];
         $regions = $this->find()->orderBy(['name' => SORT_ASC])->asArray()->all();
+	$regions = $arr + $regions;
+//print_r($regions);
         return $regions;
     }
 

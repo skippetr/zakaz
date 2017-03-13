@@ -18,7 +18,7 @@ $this->registerJsFile('http://localhost/yii-test/web/assets/script.js', ['depend
     <div class="col-sm-5 col-sm-offset-0 col-md-5 col-md-offset-0"> <!--col-md-4 col-md-offset-4>-->
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"><?= Html::encode($this->title) ?></h3>
+                <h3 class="panel-title"><?= Html::encode($this->title) ?> как Клиент</h3>
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
@@ -48,7 +48,7 @@ $this->registerJsFile('http://localhost/yii-test/web/assets/script.js', ['depend
     <div class="col-sm-5 col-sm-offset-2 col-md-5 col-md-offset-2"> <!--col-md-4 col-md-offset-4>-->
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title"><?= Html::encode($this->title) ?></h3>
+                <h3 class="panel-title"><?= Html::encode($this->title) ?> как Мастер</h3>
             </div>
             <div class="panel-body">
                 <?php $form = ActiveForm::begin([
