@@ -30,6 +30,14 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= $model['description'] ?>
 
         <h4>Фотография</h4>
-        <img src="<?= $model['file'] ?>">
+<?php
+    $url = explode('/', $model['file']);
+    if (count($url) > 2) {
+	$url_result = 'http://176.112.218.83/yii/' . $url[5] . '/' . $url[6];
+?>
+        <img src="<?= $url_result ?>" style="width: 200px; height: 200px;">
+<?php } else { ?>
+        Изображение отсутствует
+<?php } ?>
     </div>
 </div>

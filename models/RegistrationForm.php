@@ -9,6 +9,7 @@ class RegistrationForm extends \dektrium\user\models\RegistrationForm
      */
     public $type;
     public $rate;
+public $activeType;
     //public $hiddenField;
     /**
      * @inheritdoc
@@ -19,6 +20,7 @@ class RegistrationForm extends \dektrium\user\models\RegistrationForm
 //        $rules['fieldRequired'] = ['field', 'required'];
         $rules['typeLength']   = ['type', 'number', 'max' => 2];
         $rules['rateLength']   = ['rate', 'number', 'max' => 3];
+$rules['activeTypeLength']   = ['activeType', 'number', 'max' => 3];
         unset($rules['usernameRequired']);
         return $rules;
     }

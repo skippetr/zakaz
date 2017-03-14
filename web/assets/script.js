@@ -1,5 +1,18 @@
 $(document).ready(function () {
 
+    var activeType = $('#register-form-activetype').attr('value');
+    if (activeType == '0') {
+	$('#mst').removeClass('has-error');
+	$('#mst .help-block').text(' ');
+	$('#mst #register-form-email').val(' ');
+	$('input[type=password]').eq(1).val('');
+    }else if (activeType == '1') {
+	$('#clt').removeClass('has-error');
+	$('#clt .help-block').text(' ');
+	$('#clt #register-form-email').val(' ');
+	$('input[type=password]').eq(0).val('');
+    }
+
     $(document).on("click", "[data-toggle='block']", function(){
         $(this).addClass('hide');
         $(this).next().removeClass('hide');

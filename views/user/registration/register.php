@@ -11,7 +11,7 @@ use yii\widgets\ActiveForm;
 $this->title = Yii::t('user', 'Sign up');
 $this->params['breadcrumbs'][] = $this->title;
 
-$this->registerJsFile('http://localhost/yii-test/web/assets/script.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
+$this->registerJsFile('http://176.112.218.83/yii/web/assets/script.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 
 ?>
 <div class="row">
@@ -27,7 +27,7 @@ $this->registerJsFile('http://localhost/yii-test/web/assets/script.js', ['depend
 
                 <?php //$form->field($model, 'username') ?>
 
-                <?= $form->field($model, 'email') ?>
+                <?= $form->field($model, 'email', ['options' => ['id'=>'clt']]) ?>
 
                 <?php //$form->field($model, 'field') ?>
 
@@ -57,7 +57,9 @@ $this->registerJsFile('http://localhost/yii-test/web/assets/script.js', ['depend
 
                 <?php //$form->field($model, 'username') ?>
 
-                <?= $form->field($model, 'email') ?>
+<?= $form->field($model, 'activeType')->hiddenInput(['value' => isset($_POST['register-form']['type']) && $_POST['register-form']['type'] == 1 ? '1' : '0'])->label(false) ?>
+
+                <?= $form->field($model, 'email', ['options' => ['id'=>'mst']]) ?>
                 
                 <?= $form->field($model, 'type')->hiddenInput(['value'=> '1'])->label(false) ?>
 

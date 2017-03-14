@@ -46,7 +46,13 @@ $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' 
                 </p>
                 <p class="text-right">Техника: <?= \app\models\Technics::findOne($item['tech'])['name'] ?></p>
                 <!-- <button type="button" class="btn btn-md btn-primary">Принять заявку</button> -->
-                <img src="<?= $item['file'] ?>" style="width: 200px;">
+<?php
+    $url = explode('/', $item['file']);
+    if (count($url) > 2) {
+	$url_result = 'http://176.112.218.83/yii/' . $url[5] . '/' . $url[6];
+?>
+                        <img src="<?= $url_result ?>" style="width: 200px; height: 200px;">
+<?php } ?>
                 <a href="<?= Yii::getAlias('@web') ?>/site/description?id=<?= $item['id'] ?>" role="button" class="pull-left btn btn-primary btn-large">Подробнее</a>
             </div>
         </div>
