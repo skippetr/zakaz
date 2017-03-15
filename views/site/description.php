@@ -10,6 +10,10 @@ use yii\helpers\Html;
 
 $this->title = 'Подробнее о заказе';
 $this->params['breadcrumbs'][] = $this->title;
+
+$this->registerCssFile("http://176.112.218.83/yii/web/assets/jphotogrid.css");
+$this->registerJsFile('http://176.112.218.83/yii/web/assets/jphotogrid.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
+$this->registerJsFile('http://176.112.218.83/yii/web/assets/setup.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 
 <div class="row">
@@ -30,14 +34,18 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= $model['description'] ?>
 
         <h4>Фотография</h4>
-<?php
-    $url = explode('/', $model['file']);
-    if (count($url) > 2) {
-	$url_result = 'http://176.112.218.83/yii/' . $url[5] . '/' . $url[6];
-?>
-        <img src="<?= $url_result ?>" style="width: 200px; height: 200px;">
-<?php } else { ?>
-        Изображение отсутствует
-<?php } ?>
+        <?php
+            $url = explode('/', $model['file']);
+            if (count($url) > 2) {
+            $url_result = 'http://176.112.218.83/yii/' . $url[5] . '/' . $url[6];
+        ?>
+                <ul id="pg">
+                    <li>
+                        <img src="<?= $url_result ?>" style="width: 200px; height: 200px;">
+                    </li>
+                </ul>
+        <?php } else { ?>
+            Изображение отсутствует
+        <?php } ?>
     </div>
 </div>

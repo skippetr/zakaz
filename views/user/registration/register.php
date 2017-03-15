@@ -57,7 +57,9 @@ $this->registerJsFile('http://176.112.218.83/yii/web/assets/script.js', ['depend
 
                 <?php //$form->field($model, 'username') ?>
 
-<?= $form->field($model, 'activeType')->hiddenInput(['value' => isset($_POST['register-form']['type']) && $_POST['register-form']['type'] == 1 ? '1' : '0'])->label(false) ?>
+                <?= $form->field($model, 'activeType')
+                    ->hiddenInput(['value' => isset($_POST['register-form']['type']) && $_POST['register-form']['type'] == 1 ? '1' : '0'])
+                    ->label(false) ?>
 
                 <?= $form->field($model, 'email', ['options' => ['id'=>'mst']]) ?>
                 

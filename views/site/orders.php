@@ -32,6 +32,10 @@ $this->registerJs($script, yii\web\View::POS_READY);
 
 $this->registerCssFile("http://rm.0x5.ru/css/bootstrap-select.min.css");
 $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
+
+$this->registerCssFile("http://176.112.218.83/yii/web/assets/jphotogrid.css");
+$this->registerJsFile('http://176.112.218.83/yii/web/assets/jphotogrid.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
+$this->registerJsFile('http://176.112.218.83/yii/web/assets/setup.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 
 <div class="row padding-bot">
@@ -64,13 +68,17 @@ $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' 
                 </p>
                 <p class="text-right">Техника: <?= \app\models\Technics::findOne($item['tech'])['name'] ?></p>
                 <!-- <button type="button" class="btn btn-md btn-primary">Принять заявку</button> -->
-<?php
-    $url = explode('/', $item['file']);
-    if (count($url) > 2) {
-	$url_result = 'http://176.112.218.83/yii/' . $url[5] . '/' . $url[6];
-?>
-                        <img src="<?= $url_result ?>" style="width: 200px; height: 200px;">
-<?php } ?>
+                <?php
+                    $url = explode('/', $item['file']);
+                    if (count($url) > 2) {
+                    $url_result = 'http://176.112.218.83/yii/' . $url[5] . '/' . $url[6];
+                ?>
+                        <ul id="pg">
+                            <li>
+                                <img src="<?= $url_result ?>" style="width: 200px; height: 200px;">
+                            </li>
+                        </ul>
+                <?php } ?>
                 <a href="<?= Yii::getAlias('@web') ?>/site/description?id=<?= $item['id'] ?>" role="button" class="pull-left btn btn-primary btn-large">Подробнее</a>
             </div>
         </div>
