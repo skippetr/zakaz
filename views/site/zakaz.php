@@ -73,7 +73,7 @@ $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' 
         <?= $form->field($model, 'typeTech')->dropDownList($tech); ?>
         <?= $form->field($model, 'items[]')->radioList(['1' => 'Самовывоз', '2' => 'Доставка']) ?>
         <?= $form->field($model, 'description')->textarea(['rows' => 3, 'cols' => 7]) ?>
-        <?= $form->field($model, 'imageFile')->fileInput() ?>
+        <?= $form->field($model, 'imageFile')->fileInput(['class' => 'btn btn-primary']) ?>
 
         <div id="thumb"></div><br>
 

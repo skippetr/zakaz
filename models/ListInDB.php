@@ -11,8 +11,8 @@ class ListInDB
 
     public static function getListOfMasters($region = 'none', $tech = 'none')
     {
-        $params = [':type' => 1];
-        $query = Yii::$app->db->createCommand('SELECT id FROM user WHERE type=:type')
+        $params = [':type' => 1, ':flags' => 1];
+        $query = Yii::$app->db->createCommand('SELECT id FROM user WHERE type=:type AND flags=:flags')
             ->bindValues($params)
             ->queryAll();
 

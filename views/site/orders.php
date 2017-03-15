@@ -12,6 +12,24 @@ use \yii\widgets\Pjax;
 $this->title = 'Заказы';
 $this->params['breadcrumbs'][] = $this->title;
 
+$script = <<< JS
+    $(function () {
+
+$('.toggle_img').on('click', function()
+{
+var $this = $(this);
+var currentSrc = this.href;
+var toggleSrc = $this.data("img");
+var img = $this.find('img')[0];
+img.src = toggleSrc;
+this.href = toggleSrc;
+$this.data("img", currentSrc);
+return false;
+        });  
+    });
+JS;
+$this->registerJs($script, yii\web\View::POS_READY);
+
 $this->registerCssFile("http://rm.0x5.ru/css/bootstrap-select.min.css");
 $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>

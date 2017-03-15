@@ -88,8 +88,8 @@ $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' 
         <?= $form->field($model, 'typeTech')->dropDownList($tech,$params); ?>
 
         <div class="row">
-            <div class="col-sm-1">
-                <label class="control-label inline-label">Дата:</label>
+            <div class="col-sm-1" style="padding-left: 0px;">
+                <label class="control-label inline-label" style="padding-top: 0px;">Дата:</label>
             </div>
             <div class="col-sm-4">
                 <div class="form-group">
@@ -102,7 +102,7 @@ $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' 
                 </div>
             </div>
             <div class="col-sm-2">
-                <label class="control-label inline-label">Время:</label>
+                <label class="control-label inline-label" style="padding-top: 0px; padding-left: 14px;">Время:</label>
             </div>
             <div class="col-sm-3">
                 <div class="form-group">
@@ -125,7 +125,7 @@ $this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' 
         </div>
 
         <?= $form->field($model, 'description')->textarea(['rows' => 3, 'cols' => 7]) ?>
-        <?= $form->field($model, 'imageFile')->fileInput() ?>
+        <?= $form->field($model, 'imageFile')->fileInput(['class' => 'btn btn-primary']) ?>
 
         <div id="thumb"></div><br>
 
