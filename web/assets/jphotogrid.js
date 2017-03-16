@@ -73,12 +73,18 @@ $(function() {
 				},function(){
 					$(this).removeClass(settings.activeClass);
 				});
-			$('.' + settings.activeClass).live('click', function(){				
+			$('body').on('click', '.' + settings.activeClass, function(){
 				select(this);
 			});
-			$('.' + settings.selectedClass).live('click', function(){
+			$('body').on('click', '.' + settings.selectedClass, function(){
 				hideSelected();
 			});
+//			$('.' + settings.activeClass).on('click', function(){				
+//				select(this);
+//			});
+//			$('.' + settings.selectedClass).on('click', function(){
+//				hideSelected();
+//			});
 			
 			$(this).find('div')
 				.hover(function(){

@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$('#pg').jphotogrid({
+	$('ul[id^="pg"]').jphotogrid({
 		baseCSS: {
 			width: '175px',
 			height: '117px',

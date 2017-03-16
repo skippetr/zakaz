@@ -12,30 +12,27 @@ use \yii\widgets\Pjax;
 $this->title = 'Заказы';
 $this->params['breadcrumbs'][] = $this->title;
 
+$this->registerCssFile("http://rm.0x5.ru/css/bootstrap-select.min.css");
+$this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
+
 $script = <<< JS
     $(function () {
-
-$('.toggle_img').on('click', function()
-{
-var $this = $(this);
-var currentSrc = this.href;
-var toggleSrc = $this.data("img");
-var img = $this.find('img')[0];
-img.src = toggleSrc;
-this.href = toggleSrc;
-$this.data("img", currentSrc);
-return false;
+        $("[data-fancybox]").fancybox({
+	loop:false,
+	infobar:false,
+	buttons:true,
+	slideShow:false,
+	fullScreen:false,
+	touch:false,
+	thumbs:false,
+	focus:false,
         });  
     });
 JS;
 $this->registerJs($script, yii\web\View::POS_READY);
 
-$this->registerCssFile("http://rm.0x5.ru/css/bootstrap-select.min.css");
-$this->registerJsFile('http://rm.0x5.ru/js/bootstrap-select.min.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
-
-$this->registerCssFile("http://176.112.218.83/yii/web/assets/jphotogrid.css");
-$this->registerJsFile('http://176.112.218.83/yii/web/assets/jphotogrid.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
-$this->registerJsFile('http://176.112.218.83/yii/web/assets/setup.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
+$this->registerCssFile("https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css");
+$this->registerJsFile('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js', ['depends' => [\yii\web\JqueryAsset::className()]]);
 ?>
 
 <div class="row padding-bot">
@@ -73,13 +70,17 @@ $this->registerJsFile('http://176.112.218.83/yii/web/assets/setup.js', ['depends
                     if (count($url) > 2) {
                     $url_result = 'http://176.112.218.83/yii/' . $url[5] . '/' . $url[6];
                 ?>
-                        <ul id="pg">
-                            <li>
-                                <img src="<?= $url_result ?>" style="width: 200px; height: 200px;">
-                            </li>
-                        </ul>
+<div style="height: 70px; position: relative;">
+<a data-fancybox="inline" href="<?= $url_result ?>" style="height"><img src="<?= $url_result ?>" style="position: absolute; max-width:100% !important; max-height:100% !important; display: block;"></a>
+</div>
+                                <!--<ul id="pg" style="height: 80px;">
+                                    <li>
+                                        <img src="<?= $url_result ?>">
+                                    </li>
+                                </ul>
+-->
                 <?php } ?>
-                <a href="<?= Yii::getAlias('@web') ?>/site/description?id=<?= $item['id'] ?>" role="button" class="pull-left btn btn-primary btn-large">Подробнее</a>
+                <a href="<?= Yii::getAlias('@web') ?>/site/description?id=<?= $item['id'] ?>" role="button" class="pull-right btn btn-primary btn-large">Подробнее</a>
             </div>
         </div>
 
